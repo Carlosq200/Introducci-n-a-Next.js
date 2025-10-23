@@ -1,0 +1,29 @@
+﻿version: "3.9"
+services:
+  mariadb:
+    image: mariadb:11
+    container_name: mp_mariadb
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: multipedidos_a
+      MARIADB_USER: mpuser
+      MARIADB_PASSWORD: mppass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+  postgres:
+    image: postgres:16
+    container_name: mp_postgres
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: mpuser
+      POSTGRES_DB: multipedidos_b
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+volumes:
+  mariadb_data:
+  pg_data:

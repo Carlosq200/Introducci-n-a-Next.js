@@ -1,0 +1,11 @@
+﻿# Node
+node_modules/
+.next/
+out/
+.env*
+# Java / Maven
+target/
+*.iml
+.idea/
+# OpenAPI generated (si usaras codegen)
+**/generated/**
