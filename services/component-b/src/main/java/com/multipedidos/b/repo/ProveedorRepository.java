@@ -1,1 +1,0 @@
-﻿package com.multipedidos.b.repo; import org.springframework.data.jpa.repository.JpaRepository; import com.multipedidos.b.domain.Proveedor; public interface ProveedorRepository extends JpaRepository<Proveedor,Long>{}

@@ -1,4 +1,4 @@
-package com.multipedidos.a.domain;
+package com.multipedidos.b.domain;
 
 import jakarta.persistence.*;
 

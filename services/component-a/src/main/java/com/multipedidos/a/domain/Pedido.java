@@ -1,4 +1,4 @@
-﻿package com.multipedidos.a.domain;
+package com.multipedidos.a.domain;
 import jakarta.persistence.*; import lombok.*; import java.util.*;
 @Embeddable @Data @NoArgsConstructor @AllArgsConstructor class ProductoEmb { private String nombre; private Double precio; }
 @Entity @Data @NoArgsConstructor @AllArgsConstructor

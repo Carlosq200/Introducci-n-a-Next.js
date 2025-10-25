@@ -1,4 +1,4 @@
-﻿package com.multipedidos.a.service;
+package com.multipedidos.a.service;
 import com.multipedidos.a.api.*; import com.multipedidos.a.domain.*; import com.multipedidos.a.repo.PedidoRepository;
 import lombok.RequiredArgsConstructor; import org.springframework.stereotype.Service;
 @Service @RequiredArgsConstructor

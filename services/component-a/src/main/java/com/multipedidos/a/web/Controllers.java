@@ -1,4 +1,4 @@
-﻿package com.multipedidos.a.web;
+package com.multipedidos.a.web;
 import com.multipedidos.a.api.*; import com.multipedidos.a.domain.*; import com.multipedidos.a.repo.*; import com.multipedidos.a.service.PedidoService;
 import lombok.RequiredArgsConstructor; import org.springframework.http.*; import org.springframework.web.bind.annotation.*; import java.util.*;
 
