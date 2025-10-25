@@ -91,3 +91,37 @@ pm run build\ se ejecutó correctamente
 
 ---
 Autor: Carlos
+## Tecnologías principales
+
+- Next.js 16 con App Router
+- React Server Components
+- TypeScript
+- Tailwind CSS
+- Turbopack para dev
+- Build estático (`npm run build` genera páginas prerenderizadas)
+
+## Estructura relevante
+
+- `frontend/`
+  - `src/app/` → todas las rutas (`/dashboard`, `/dashboard/invoices`, `/dashboard/customers`)
+  - `data/` → datos mock locales (`invoices.ts`, `customers.ts`)
+- `legacy-backend/`, `services/`, `libs/common-lib/`
+  - Código Java / Spring Boot que se empezó pero no se integra aún al dashboard.
+  - Se mantiene para contexto de evolución futura (microservicios).
+
+## Cómo replicar el entorno local
+
+```bash
+# 1. Clonar
+git clone https://github.com/Carlosq200/Introducci-n-a-Next.js.git
+cd Introducci-n-a-Next.js/frontend
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Modo desarrollo
+npm run dev
+# abre http://localhost:3000
+
+# 4. Build producción (comprobación final)
+npm run build
